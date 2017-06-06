@@ -1,0 +1,581 @@
+@font-face{
+	font-family: 'Oswald-Regular';
+	src: url('../fonts/Oswald-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'Oswald-Light';
+	src: url('../fonts/Oswald-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face{
+	font-family: 'PT-Sans';
+	src: url('../fonts/PT_Sans-Web-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+h1, h2, h4{
+        font-family: 'Oswald-Light', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Oswald-Regular', sans-serif;
+}
+/* Need for sticky footer*/
+html,body{
+	height: 100%;
+}
+/* Start wrap for sticky footer*/
+#wrap{
+	min-height: 100%;
+	margin-bottom: -65px;
+}
+#wrap:after{
+content: "";
+ display: block;
+}
+/* End wrap for sticky footer*/
+
+/*header*/
+#header{
+	width: 80%;
+	margin: 0 auto;
+}
+/*layer_1*/
+#feedback{
+	height: 25px;
+	margin-bottom: 55px;
+}
+#contacts_feedback li{
+	float: left;
+	display: inline-block;
+	line-height: 25px;
+}
+.contact_icon_phone:before{
+	content: "";
+        display: block;
+        float: left;
+        background: url('../img/main/phone.png') no-repeat;
+	height: 16px;
+	width: 16px;
+	margin: 5px 5px 0 0;
+}
+.contact_icon_mail:before{
+	content: "";
+        display: block;
+        float: left;
+        background: url('../img/main/envelope.png') no-repeat;
+	height: 16px;
+	width: 21px;
+	margin: 5px 5px 0 0; 
+}
+.phone{
+	margin-right: 20px;
+}
+#contacts_social li{
+	float: right;
+	display: inline-block;
+	margin: 3px 0 0 4px;
+	cursor: pointer; /* if use onclick */
+}
+.social_icon{
+	background: url('../img/main/storesprite.png') no-repeat;
+	width: 29px;
+	height: 29px;
+}
+.fb{
+	background-position: 0 -13707px;
+}
+.fb:hover{
+	background-position: 0 -13738px;
+}
+.google{
+	background-position: 0 -13831px;
+}
+.google:hover{
+	background-position: 0 -13862px;
+}
+.twi{
+	background-position: 0 -13955px;
+}
+.twi:hover{
+	background-position: 0 -13986px;
+}
+.vk{
+	background-position: 0 -14079px;
+}
+.vk:hover{
+	background-position: 0 -14110px;
+}
+#contacts:after{clear: both;}
+
+/*layer_2*/
+#account{
+	height: 60px;
+	margin-bottom: 40px;
+}
+#account img{
+	float: left;
+}
+#account ul{
+	height: 55px;
+}
+#account li{
+	float: right;
+	line-height: 55px;
+	margin-left: 35px;
+}
+#account a{
+	color: #000;
+}
+#account a:hover{
+	color: #16b716;
+}
+.account_icon:before{
+	content: "";
+        display: block;
+        float: left;
+	background: url('../img/main/accountsprite.png') no-repeat;
+	height: 16px;
+	margin: 18px 5px 0 0;
+}
+.enter:before{
+	background-position: 0 -37px;
+	width: 10px;
+}
+.enter:hover::before{
+	background-position: -20px -37px;
+}
+.acc:before{
+	background-position: 0 0;
+	width: 15px;
+}
+.acc:hover::before{
+	background-position: -20px 0;
+}
+.cart:before{
+	background-position: 0 -18px;
+	width: 20px;
+}
+.cart:hover::before{
+	background-position: -20px -18px;
+}
+#account:after{clear: both;}
+
+/*layer_3*/
+#menu{
+	margin-bottom: 20px;
+}
+#menu li{
+	display: inline-block;
+}
+#menu a{
+	color: #000;
+	font-size: 20px;
+	margin-right: 50px;
+}
+#menu a:hover{
+	color: #16b716;
+}
+/*content*/
+/*left content*/
+#content{
+	width: 95%;
+	margin: 0 auto;
+        min-height: 100%;
+}
+#catalog{
+	float: left;
+	width: 20%;
+}
+#catalog h2{
+	text-align: center; 
+	color: #16b716;
+	margin-bottom: 15px;
+}
+#catalog li{
+        font-size: 20px;
+	margin: 10px 0 10px 10px;
+	width: 92px;
+
+}
+#catalog a{
+	color: #000;
+}
+#catalog a:hover{
+	color: #16b716;
+}
+
+/*right content*/
+#latestbox{
+	float: right;
+	width: 80%;
+	text-align: center;
+}
+#listbox{
+	text-align: center;
+}
+.item-price{
+	color: #16b716;
+	margin-bottom: 5px;
+}
+#listbox a{
+	color: #000;
+}
+.itembox{
+	display: inline-block;
+	text-align: center;
+	width: 250px;
+	margin: 2% 2.5%;
+	padding: 15px;
+	border-radius: 10px;
+        /*box-sizing: border-box;*/
+}
+.itembox:hover{
+	box-shadow: -1px 5px 10px #d6d5d5;
+	border: 1px solid #d6d5d5;
+}
+.itembox p{
+    margin: 0 5px 0 5px;
+}
+.cartbutton{
+	height: 38px;
+	width: 100px;
+	cursor: pointer;
+	background: none;
+	border: none;
+	padding: 0 8px 0 8px;
+	outline: none;
+}
+.cartbutton:hover{
+	background: #16b716;
+	color: #fff;
+}
+.cartbutton:before{
+	background-position: 0 -18px;
+	line-height: 30px;
+	width: 20px;
+	margin: 2.5px 0 0 3px;
+}
+.cartbutton:hover::before{
+	background-position: -40px -18px;
+}
+
+/*footer*/
+#footer, #footer:after{
+	clear: both;
+	height: 65px;
+	background: #111;
+	line-height: 65px;
+        padding: 0 5%;
+}
+#footer p{
+	display: inline-block;
+	color: #fff;
+        
+}
+#footer p+p{
+	float: right;
+}
+
+/*login and register*/
+.login-signup{
+        text-align: center;
+        width: 340px;
+        margin: 0 auto;
+        min-height: 100%;
+}
+.login-signup p {
+        text-align: left;
+}
+.login-signup h1, .login-signup h2{
+	margin-bottom: 20px;
+        color: #16b716;
+}
+.login-signup input{
+	width: 340px;
+	height: 40px;
+	font-size: 18px;
+	padding: 0 5px;
+	margin: 5px 0;
+	border-color: #000;
+	border-radius: 2px;
+}
+.login-signup input:last-child{
+        width: 200px;
+}
+.login-signup input:focus{
+	outline: none;
+}
+.account-subm{
+	border: none;
+	background: #fff;
+}
+.account-subm{
+	cursor: pointer;
+}
+.account-subm:hover{
+    background: #16b716;
+}
+#account_about{
+    width: 40%;
+    margin: 0 auto;
+}
+#account_about h2{
+    display: table-cell;
+    color: #16b716;
+}
+#account_about table{
+    border-collapse: collapse;
+}
+#account_about tr, #account_about td{
+    padding: 5px;
+}
+.account_info{
+    float: left;
+}
+.account_info:after{
+    clear: both;
+}
+#account_about hr{
+    border: none;
+    width: 1px;
+    height: 170px;
+    background-color: gray;
+    float: left;
+    margin-left: 9%;
+}
+.account_info tr td:first-child{
+    color: #737373;
+}
+.account_action{
+    float: right;
+    text-align: left;
+}
+.account_action a{
+    color: #000;
+}
+.account_action a:hover{
+    color: #16b716;
+}
+.account_action:after{
+    clear: both;
+}
+.edit{
+    height: 540px;
+}
+/*item content*/
+.item-content{
+	float: right;
+	width: 80%;
+}
+.main-content{
+	height: 300px;
+	margin: 0 0 50px 100px;
+	display: block;
+}
+.main-content img{
+	margin-right: 20px;
+}
+.main-content span{
+	font-size: 12px;
+}
+.main-content p{
+	margin-top: 20px;
+
+}
+.full-description{
+	clear: both;
+	font-size: 16px;
+        margin-bottom: 30px;
+        font-family: 'PT-Sans', sans-serif;
+}
+.full-description hr{
+    width: 20%;
+}
+
+/*Category List
+.categorybox{
+	display: inline-block;
+	text-align: center;
+	width: 250px;
+	height: 270px;
+	margin: 2% 3.5%;
+	padding-top: 25px;
+	border-radius: 10px;
+}
+.categorybox:hover{
+	box-shadow: -1px 5px 10px #d6d5d5;
+	border: 10px solid #d6d5d5;
+}
+.categorybox p{
+	margin-top: 10px;
+}*/
+
+/*Cart page*/
+#cartbox {
+    float: right;
+    width: 80%;
+}
+#cartbox h2{
+    color: #16b716;
+    text-align: center;
+}
+#cartbox th, #cartbox td{
+    padding: 10px 40px 0 0;
+}
+#cartbox a{
+    color: #069aca;
+}
+#cartbox a:hover{
+    color: #000;
+}
+#cartbox .delete-icon{
+    background: url('../img/main/accountsprite.png') no-repeat;
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+#cartbox .delete{
+    background-position: -16px -53px;
+}
+#cartbox .delete:hover{
+    background-position: 0 -53px;
+}
+#cartprice{
+    padding: 20px 0;
+}
+#cartprice tr td{
+    padding: 0;
+}
+.checkout{
+    text-align: center;
+    width: 13%;
+    background: #16b716;
+    line-height: 38px;
+    color: #fff;
+    float: left;
+    margin-bottom: 1em;
+}
+.checkout:hover{
+    color: #000;
+}
+.checkout:after{
+    clear: both;
+}
+.buy{
+    height: 595px;
+}
+.buy h1{
+    margin: 0;
+}
+.buy form{
+    margin-top: 1em;
+}
+
+/*Info bar*/
+/* About */
+#about{
+    width: 80%;
+    margin: 0 auto;
+}
+#about h2{
+    color: #16b716;
+}
+#about p{
+    font-family: 'PT-Sans', sans-serif;
+}
+/* Delivery */
+#infobar{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 100%;
+}
+#left-table h2, #right-table h2{
+    color: #000;
+}
+#left-table p, #right-table p{
+    color: #737373;
+    font-family: 'PT-Sans', sans-serif;
+}
+#left-table tr td, #right-table tr td{
+    padding-bottom: 1.25em;
+}
+#left-table{
+    border-spacing: 10px;
+    float: left;
+}
+#right-table{
+    border-spacing: 10px;
+    float: right;
+}
+.deliver{
+    background: url('../img/main/infobarsprite.png') no-repeat -204px 0;
+    width: 68px;
+    height: 68px;
+}
+.pay{
+    background-position: -68px 0;
+    height: 68px;
+}
+.return{
+    background-position: 0 0;
+    height: 68px;
+}
+.quality{
+    background-position: -136px 0;
+    height: 68px;
+}
+
+/* Feedback(support) */
+.support{
+    width: 45%;
+    margin: 0 auto;
+    height: 300px;
+}
+.support h2{
+    text-align: center;
+    color: #16b716;
+    margin: 0;
+}
+.support p{
+    font-family: 'PT-Sans', sans-serif;
+    text-align: left;
+}
+.support form{
+    margin-top: 5px;
+}
+.support input[name="submit"]{
+    margin: 0;
+    float: left;
+    width: 150px 
+}
+.support input{
+	width: 200px;
+	height: 40px;
+	font-size: 18px;
+	padding: 0 5px;
+	margin: 5px 0;
+	border-color: #000;
+	border-radius: 2px;
+}
+.support textarea{
+    	width: 340px;
+	height: 96px;
+	font-size: 18px;
+	padding: 0 5px;
+	margin: 5px 0;
+        border: solid #000 2px;
+	border-radius: 2px;
+}
+.support textarea:focus , .support input:focus{
+	outline: none;
+}
+.support span{
+    text-align: left;
+}
