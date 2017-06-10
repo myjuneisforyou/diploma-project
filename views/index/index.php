@@ -4,9 +4,9 @@
 	<div id="next">&rang;</div>
 	<div id="prev">&lang;</div>
 	<div id="slider">
-		<a href="category/2"><img src="../template/img/slider/img1.jpg"></a>
-		<a href="product/25"><img src="../template/img/slider/img2.jpg"></a>
-		<a href="list/10"><img src="../template/img/slider/img3.jpg"></a>
+            <a href="category/2"><img src="../template/img/slider/img1.jpg" ></a>
+		<a href="product/25"><img src="../template/img/slider/img2.jpg" ></a>
+		<a href="list/10"><img src="../template/img/slider/img3.jpg" ></a>
 	</div>
 </div>
 <!--content-->

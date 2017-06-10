@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Магазин, телефон, гаджет, планшет, часы, iPhone, Watch, Mac, Macbook, iPad">
 	<meta name="description" content="Интернет-магазин iStore по продаже гаджетов">
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
 	<link rel="icon" href="../template/img/main/icon.png">
 	<link rel="stylesheet" href="../template/css/style.css">
 	<link rel="stylesheet" href="../template/css/sliderstyle.css">

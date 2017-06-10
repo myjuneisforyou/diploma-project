@@ -42,7 +42,7 @@ class InfoController {
             
             if($error == false){
                 $adminEmail = "support@istore.com";
-                $txt = $message;
+                $txt = htmlspecialchars($message);
                 $sub = $subject;
                 $headers = "From: $email" . "\r\n" .
                       "Name: $name" . "\r\n" . 
