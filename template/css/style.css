@@ -308,7 +308,7 @@ html,body{
 	border-radius: 2px;
 }
 .login-signup input:last-child{
-        width: 200px;
+        width: 170px;
 }
 .login-signup input:focus{
 	outline: none;
@@ -316,9 +316,7 @@ html,body{
 .account-subm{
 	border: none;
 	background: #fff;
-}
-.account-subm{
-	cursor: pointer;
+        cursor: pointer;
 }
 .account-subm:hover{
     background: #16b716;
@@ -532,7 +530,6 @@ html,body{
 .support{
     width: 45%;
     margin: 0 auto;
-    height: 300px;
 }
 .support h2{
     text-align: center;
@@ -577,17 +574,179 @@ html,body{
 }
 
 /* MEDIA QUERIES */
-
 @media only screen and (min-width: 1920px){
-    
-}
-@media only screen and (min-width: 1680px){
-    
-}
-@media only screen and (min-width: 1440px){
-    
-}
+    *{ font-size: 23px; }
+    h1 { font-size: 39px; }
+    h2 { font-size: 31px; }
+    h3 { font-size: 25px; }
+    .main-content span{ font-size: 19px; }
+    .cartbutton{
+        width: 145px;
+    }
+    .cartbutton:before{
+        margin: 7.5px 0 0 3px;
+    }
+    #catalog li{
+        width: auto;
+    }
+    .itembox{    
+        margin: 2% 3.5%;
+    }
+    .support{
+        width: 31%;
+    }
+    #sliderwrap{
+        width: 90% !important;
+        margin: 0 auto;
+        height: 664px !important;
 
+    }
+    #slider, #slider img{
+        width: 1728px !important;
+        height: 664px !important;
+    }
+    #next, #prev{
+        top: 307px !important;
+    }
+    .account_icon:before{
+        margin: 21px 5px 0 0;
+    }
+    .contact_icon_mail:before, .contact_icon_phone:before{
+        margin: 13px 5px 0 0;
+    }
+    .social_icon{
+        width: 36px;
+	height: 36px;
+    }
+    .vk{
+        background-position: 0 -13393px;
+    }
+    .vk:hover{
+        background-position: 0 -13355px;
+    }
+    .fb{
+        background-position: 0 -12823px;
+    }
+    .fb:hover{
+        background-position: 0 -12785px;
+    }
+    .google{
+       background-position: 0 -12937px;
+    }
+    .google:hover{
+       background-position: 0 -12899px;
+    }
+    .twi{
+        background-position: 0 -13279px;
+    }
+    .twi:hover{
+        background-position: 0 -13241px;
+    }
+}
+@media only screen and (min-width: 1680px) and (max-width: 1919px){
+    *{ font-size: 21px; }
+    h1 { font-size: 37px; }
+    h2 { font-size: 29px; }
+    h3 { font-size: 23px; }
+    .main-content span{ font-size: 17px; }
+    #catalog li{
+        width: auto;
+    }
+    .cartbutton{
+        width: 135px;
+    }
+    .cartbutton:before{
+        margin: 7.5px 2px 0 3px;
+    }
+    #content{
+        width: 90%;
+    }
+    #sliderwrap, #slider, #slider img{
+        width: 1680px !important;
+        height: 647px !important;
+    }
+    #next, #prev{
+        top: 298.5px !important;
+    }
+    .contact_icon_mail:before, .contact_icon_phone:before{
+        margin: 12px 5px 0 0;
+    }
+    #account .account_icon:before{
+        margin: 21px 5px 0 0;
+    }
+    .account_icon:before{
+        margin: 8px -5px 0 0;
+    }
+    #infobar{
+        width: 85%;
+    }
+    .support{
+        width: 35%;
+    }
+    #account_about hr{
+        margin-left: 7%;
+    }
+    .social_icon{
+        width: 36px;
+	height: 36px;
+    }
+    .vk{
+        background-position: 0 -13393px;
+    }
+    .vk:hover{
+        background-position: 0 -13355px;
+    }
+    .fb{
+        background-position: 0 -12823px;
+    }
+    .fb:hover{
+        background-position: 0 -12785px;
+    }
+    .google{
+       background-position: 0 -12937px;
+    }
+    .google:hover{
+       background-position: 0 -12899px;
+    }
+    .twi{
+        background-position: 0 -13279px;
+    }
+    .twi:hover{
+        background-position: 0 -13241px;
+    }
+}
+@media only screen and (min-width: 1440px) and (max-width: 1679px){
+    *{ font-size: 18px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 20px; }
+    .main-content span{ font-size: 14px; }
+    .support{
+        width: 41%;
+    }
+    .cartbutton{
+        width: 125px;
+    }
+    .cartbutton:before{
+        margin: 6.5px 0 0 3px;
+    }
+    #header{
+        width: 90%;
+    }
+    #account_about hr{
+        margin-left: 6%;
+    }
+    #account img{
+        max-width: 30% !important;
+    }
+    #sliderwrap, #slider, #slider img{
+        width: 1440px !important;
+        height: 554px !important;
+    }
+    #next, #prev{
+        top: 252px !important;
+    }
+}
 @media only screen and (max-width: 1280px){
     #content{
         width: 100%;
@@ -607,6 +766,16 @@ html,body{
     }
     .main-content{
         margin: 0 0 50px 50px;
+    }
+    #account_about hr{
+        margin-left: 6%;
+    }
+    #sliderwrap, #slider, #slider img{
+        width: 1280px !important;
+        height: 492px !important;
+    }
+    #next, #prev{
+        top: 221px !important;
     }
 }
 @media only screen and (max-width: 1024px){
@@ -645,7 +814,7 @@ html,body{
         float: none;
     }
     #account img{
-        max-width: 40% !important;
+        max-width: 35% !important;
     }
     .support{
         width: 57%;
@@ -668,15 +837,24 @@ html,body{
         float: none;
         margin: 0 auto;
     }
+    #account_about hr{
+        margin-left: 9%;
+    }
+    #sliderwrap, #slider, #slider img{
+        width: 1024px !important;
+        height: 392px !important;
+    }
+    #next, #prev{
+        top: 171px !important;
+    }
     
 }
-@media only screen and (max-width: 960px){
-    
+@media only screen and (max-width: 960px){  
     .itembox{
         padding: 15px 0;
     }
     #account img{
-        max-width: 45% !important;
+        max-width: 32% !important;
     }
     .support{
         width: 62%;
@@ -687,14 +865,40 @@ html,body{
     #cartbox{
         width: 89%;
     }
+    #account_about hr{
+        margin-left: 11%;
+    }
+    #sliderwrap, #slider, #slider img{
+        width: 960px !important;
+        height: 370px !important;
+    }
+    #next, #prev{
+        top: 160px !important;
+    }
     
 }
 @media only screen and (max-width: 768px){
     #account img{
-        max-width: 35% !important;
+        max-width: 30% !important;
+    }
+    .cartbutton{
+        background: #16b716;
+        color: #fff;
+    }
+    .cartbutton::before{
+        background-position: -40px -18px;
+    }
+    .account-subm{
+        background: #16b716;
+    }
+    .checkout{
+        padding: 0 10px;
     }
     .itembox{
+        box-shadow: -1px 5px 10px #d6d5d5;
+        border: 1px solid #d6d5d5;
         margin: 2%;
+        width: 289px;
     }
     .support{
         width: 77%;
@@ -710,5 +914,90 @@ html,body{
     }
     #cartbox th, #cartbox td{
         padding: 10px 20px 0 0;
+    }
+    #sliderwrap, #slider, #slider img{
+        width: 768px !important;
+        height: 296px !important;
+    }
+    #next, #prev{
+        top: 123px !important;
+    }
+}
+@media only screen and (max-width: 414px){
+    #contacts_feedback li{
+        float: none;
+    }
+    #contacts_social li{
+        float: none;
+        margin: 0 10px;
+    }
+    #contacts_social, #contacts_feedback{
+        text-align: center;
+    }
+    #account img{
+        float: none;
+        max-width: 50% !important;  
+    }
+    #account{
+        text-align: center;
+    }
+    #account li{
+        margin: 0 30px 0 0;
+        display: inline-block;
+    }
+    #menu a{
+        margin: 0
+    }
+    #menu li{
+        display: block;
+    }
+    #sliderwrap{
+        display: none;
+    }
+    .itembox{
+        padding: 15px;
+    }
+    .support table{
+        float: none !important;
+    }
+    .support textarea{
+        width: 200px;
+    }
+    #infobar{
+        width: 100%;
+    }
+    .account_info, .account_action{
+        float: none;
+    }
+    #account_about hr{
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: 1px;
+    }
+    .login-signup input{
+        width: 325px;
+    }
+    #cartbox th, #cartbox td{
+        padding: 0;
+    }
+    .checkout{
+        width: 30%;
+    }
+    .item-content{
+        width: 90%;
+    }
+    .main-content{
+        height: auto;
+    }
+    .main-content img{
+        margin: 0;
+        float: none;
+    }
+    .img-wrap{
+        text-align: center;
+    }
+    .full-description hr{
+        width: 40%;
     }
 }

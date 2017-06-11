@@ -8,7 +8,7 @@
         <h2 style="color: #16b716;">Email успешно изменён!</h2>
         <?php else:?>
 	<form action="#" method="post">
-            <p>Электронная почта<span style="color: red;"><?=@$error_email;?><?=@$error_email2;?></span></p>
+            <p>Электронная почта <span style="color: red;"><?=@$error_email;?><?=@$error_email2;?></span></p>
                 <input type="text" name="email" placeholder="Email"><br>
 		<input type="submit" name="submit" value="Изменить" class="account-subm">
 	</form>
