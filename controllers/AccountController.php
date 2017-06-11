@@ -42,6 +42,11 @@ class AccountController {
                 $error_city = "Введите Ваш город!";
                 $error = true;    
             }
+            //phone validation
+            if(!User::checkPhone($phone)){
+                $error_phone = "Введите номер телефона";
+                $error = true;
+            }
             //adress validation
             if(!User::checkAdress($adress)){
                 $error_adress = "Введите адрес доставки!";

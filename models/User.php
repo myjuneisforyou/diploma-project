@@ -188,7 +188,7 @@ class User {
     
     //phone validation
     public static function checkPhone($phone){
-        if(strlen($phone) < 10){
+        if(is_numeric($phone) < 10){
             return false;
         }
         return true;

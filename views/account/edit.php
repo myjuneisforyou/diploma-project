@@ -10,7 +10,7 @@
 	<form action="#" method="post"> 
             <p>Имя и фамилия <span style="color: red;"><?=@$error_name;?></span></p>
                 <input type="text" name="name" placeholder="Имя и фамилия"><br>
-            <p>Номер телефона</p>
+            <p>Номер телефона <span style="color: red;"><?=@$error_phone?></p>
                 <input type="text" name="phone" placeholder="Номер"><br>  
             <p>Город <span style="color: red;"><?=@$error_city;?></span></p>
                 <input type="text" name="city" placeholder="Город"><br>
