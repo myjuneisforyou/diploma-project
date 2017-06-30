@@ -15,9 +15,6 @@
             <p style="color: red;"><?=@$error_password;?><?=@$error_password2;?></p>
 		<input type="password" name="password" placeholder="Пароль"><br>
                 <input type="password" name="password2" placeholder="Введите пароль еще раз"><br>
-                <input style="display: none;" type="text" name="adress">
-                <input style="display: none;" type="text" name="city">
-                <input style="display: none;" type="text" name="phone">
 		<input type="submit" name="submit" value="Зарегистрироваться" class="account-subm">
 	</form>
         <?php endif;?>  

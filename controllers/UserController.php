@@ -17,17 +17,13 @@ class UserController
             $email = $method['email'];
             $password = $method['password'];
             $password2 = $method['password2'];
-            /*No idea how to register without this 2 columns...*/ //TODO 
-            $adress = $method['adress'];
-            $phone = $method['phone'];
-            $city = $method['city'];
             
             $error = false;
             
-            /*if(!User::checkName($name)){
+            if(!User::checkName($name)){
                 $error_name = "Введите имя!";
                 $error = true;    
-            }*/
+            }
   
             if(!User::checkEmailExists($email)){
                 $error_email = "Такой Еmail уже существует!";
@@ -50,7 +46,7 @@ class UserController
             }
             
             if($error == false){
-                $result = User::register($name, $phone, $email, $password, $adress, $city);
+                $result = User::register($name, $email, $password);
                 header('Refresh: 1; URL=http://istore/user/login');
             } 
         }

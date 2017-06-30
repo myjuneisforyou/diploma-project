@@ -3,21 +3,18 @@
 class User {
         
     //insert user into base (registration)
-        public static function register($name, $phone, $email, $password, $adress, $city) 
+        public static function register($name, $email, $password) 
     {
         $db = Db::getConnection();
         
        // $password = password_hash($password, PASSWORD_DEFAULT); //TODO VERIFY
-        $sql = 'INSERT INTO user (name, phone, email, password, adress, city) '
-                . 'VALUES (:name, :phone, :email, :password, :adress, :city)';
+        $sql = 'INSERT INTO user (name, email, password) '
+                . 'VALUES (:name, :email, :password)';
 
         $result = $db->prepare($sql);
         $result->bindParam(':name', $name, PDO::PARAM_STR);
-        $result->bindParam(':phone', $phone, PDO::PARAM_STR);
         $result->bindParam(':email', $email, PDO::PARAM_STR);
         $result->bindParam(':password', $password, PDO::PARAM_STR);
-        $result->bindParam(':adress', $adress, PDO::PARAM_STR);
-        $result->bindParam(':city', $city, PDO::PARAM_STR);
 
         return $result->execute();
     }
