@@ -26,22 +26,12 @@ class ProductCategory {
         if ($categoryId) {
 
             $db = Db::getConnection();            
-            $finalProducts = array();
+
             $result = $db->query("SELECT id, name, category_name, image, product_id FROM product_category "
                     . "WHERE category_id = '$categoryId'"
                     . "ORDER BY id ASC ");
 
-            $i = 0;
-            while ($row = $result->fetch()) {
-                $finalProducts[$i]['id'] = $row['id'];
-                $finalProducts[$i]['name'] = $row['name'];
-                $finalProducts[$i]['category_name'] = $row['category_name'];
-                $finalProducts[$i]['image'] = $row['image'];
-                $finalProducts[$i]['product_id'] = $row['product_id'];    
-                $i++;
-            }
-
-            return $finalProducts;       
+            return $result->fetchAll();       
         }
     }
     

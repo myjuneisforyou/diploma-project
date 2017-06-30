@@ -9,11 +9,10 @@ class ProductController {
     //product/$1
     public function actionView($productId){
         
-        //$categories = [];
         $categories = Category::getCategoryList();
         
-        //$product = [];
         $product = Product::getProductById($productId);
+        
         require_once (ROOT.'/views/product/view.php');
         return true;
     }

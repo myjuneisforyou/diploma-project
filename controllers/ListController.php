@@ -11,11 +11,9 @@ class ListController {
     public function actionCatalog($finaList){
         
         //Категории
-       // $categories = [];
         $categories = Category::getCategoryList();
        
         //Вывод определенных моделей
-        //$finalProducts = [];
         $finalProducts = Product::getFinalProductList($finaList);
         
         

@@ -32,7 +32,7 @@ class User {
     
     //email validation
     public static function checkEmail($email){
-        if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)){ //preg_match("|^[-0-9a-z_]+@[-0-9a-z^\.]+\.[a-z]{2,6}$|i", $email)
             return true;
         }
         return false;
